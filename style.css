@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav img {
+    flex-shrink: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 2px 2px 10px;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+.menu li {
+    background-color: #2f4f4f;
+    list-style: none;
+    margin: 0px 14px;
+    padding: 2px;
+    border-radius: 0px 0px 10px 10px;
+    width: 12rem;
+    color: rgb(255, 255, 255);
+}
+
+.menu li:hover {
+    background-color: rgb(113, 134, 126);
+    box-shadow: 1px 1px rgb(193, 189, 189);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.contenedor-imagenes {
+    margin-top: 12vh;
+    text-align: center;
+    background-image: url("img/onda2.jpg");
+    background-size: contain;
+
+}
+
+.contenedor-imagenes img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    
+    box-shadow: 3px 3px 5px;
+    color: rgb(146, 148, 114);
+    transition: transform .2s;
+}
+
+.contenedor-imagenes img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer {
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav img {
+        height: auto;
+    }
+
+    .menu li {
+        width: 6rem;
+        margin: 0 5px;
+    }
+
+    .contenedor-imagenes {
+        background-image: url("img/onda2.jpg");
+        background-size: auto;
+        margin-top: 3rem;
+    }
+
+    .contenedor-imagenes img {
+
+        width: 15rem;
+        height: 12rem;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
