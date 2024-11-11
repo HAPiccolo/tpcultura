@@ -116,3 +116,66 @@ footer {
         font-size: 10px;
     }
 }
+
+.tradiciones h1{
+    text-align: center;
+}
+
+.contenedor-imagenes-tradicion {
+    margin-top: 12vh;
+    text-align: center;
+}
+
+.contenedor-imagenes-tradicion img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    
+    box-shadow: 3px 3px 5px;
+    color: rgb(146, 148, 114);
+    transition: transform .2s;
+}
+
+.contenedor-imagenes-tradicion img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.contenedor-imagenes-tradicion {
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    text-align: center;
+}
+
+.contenido-central {
+    display: flex;
+    align-items: center;
+}
+
+.texto-izquierda,
+.texto-derecha {
+    width: 250px; 
+    text-align: center;
+    text-align: justify;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.imagenes-centrales {
+    display: flex;
+    gap: 10px; 
+}
+
+.imagenes-centrales img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
+    transition: transform .2s;
+}
+
+.imagenes-centrales img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
